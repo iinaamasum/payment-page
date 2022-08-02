@@ -10,16 +10,16 @@ const ShippingContainerPage = () => {
   return (
     <div>
       <ShippingTopBar />
-      <div className="flex items-start justify-center gap-8">
-        <div className="w-[50%]">
-          <ShippingInfo />
+      <div className="md:flex md:flex-row-reverse items-start justify-center gap-8">
+        <div className="w-full md:w-[25%] md:mr-14">
+          <ProductCart />
         </div>
-        <div className="w-[25%] flex flex-col gap-y-16">
+        <div className="w-full md:w-[25%] flex flex-col gap-y-16 px-5 md:px-0 mt-5 md:mt-0">
           <PaymentMethod />
           <DeliveryMethod />
         </div>
-        <div className="w-[25%] md:mr-14">
-          <ProductCart />
+        <div className="w-full md:w-[50%]">
+          <ShippingInfo />
         </div>
       </div>
       <ShippingBottomBar />

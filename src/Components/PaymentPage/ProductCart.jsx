@@ -22,8 +22,8 @@ const ProductCart = () => {
     },
   ];
   return (
-    <section>
-      <h3 className="font medium mb-3">Your Cart</h3>
+    <section className="px-5 md:px-0 mt-5 md:mt-0">
+      <h3 className="font-medium mb-3">Your Cart</h3>
       <div className="">
         {cartProduct.map((product) => (
           <SelectedItemsCard key={product.id} product={product} />
@@ -34,7 +34,7 @@ const ProductCart = () => {
           Total Cost - $159.38
         </button>
       </div>
-      <div className="flex items-center gap-5 w-[50%] mx-auto mt-10">
+      <div className="flex items-center gap-5 w-[70%] mx-auto mt-10">
         <MdOutlineLocalShipping />
         <div className="text-gray-500">
           <p>You are 32.4km away</p>
