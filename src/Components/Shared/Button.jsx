@@ -4,13 +4,13 @@ const Button = ({ children, outline }) => {
   // const { outline } = props;
   return (
     <div>
-      <div
+      <button
         className={`btn ${
           outline ? 'btn-outline' : ''
         } btn-success font-semibold tracking-wide px-6`}
       >
         {children}
-      </div>
+      </button>
     </div>
   );
 };
