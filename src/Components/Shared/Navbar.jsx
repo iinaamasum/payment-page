@@ -13,8 +13,8 @@ const Navbar = () => {
     { id: 3, name: 'Kids', path: '/kids' },
   ];
   return (
-    <div class=" bg-base-100 shadow-lg">
-      <div className="navbar container mx-auto px-4 md:px-10">
+    <div class="bg-base-100 shadow-lg">
+      <div className="navbar container mx-auto px-2 md:px-10">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
