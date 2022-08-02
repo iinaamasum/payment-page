@@ -11,7 +11,7 @@ const PaymentMethod = () => {
   return (
     <section>
       <h4 className="font-medium">Payment Method</h4>
-      <div className="flex gap-1">
+      <div className="flex gap-1 mt-3">
         <Button outline={true}>
           <img className="w-32 h-7 object-contain" src={paypal} alt="" />
         </Button>

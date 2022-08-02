@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../Shared/Button';
 
 const ShippingInfo = () => {
+  const [location, setLocation] = useState('India');
   const [logInData, setLogInData] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,6 +14,7 @@ const ShippingInfo = () => {
       city: e.target.city.value,
       post_code: e.target.post_code.value,
       phone: e.target.phone_number.value,
+      country: location,
     };
 
     setLogInData(data);
@@ -91,13 +93,20 @@ const ShippingInfo = () => {
             placeholder="Phone"
             class="input w-full max-w-xs border-2 border-gray-300 mb-5 md:mb-0"
           />
-          <select class="select w-full max-w-xs border-2 border-gray-300">
-            <option selected>India</option>
-            <option>Bangladesh</option>
-            <option>America</option>
-            <option>Poland</option>
-            <option>England</option>
-            <option>Canada</option>
+          <select
+            onChange={(e) => {
+              setLocation(e.target.value);
+            }}
+            class="select w-full max-w-xs border-2 border-gray-300"
+          >
+            <option value="India" selected>
+              India
+            </option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="America">America</option>
+            <option value="Poland">Poland</option>
+            <option value="England">England</option>
+            <option value="Canada">Canada</option>
           </select>
         </div>
       </form>
