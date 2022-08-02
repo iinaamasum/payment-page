@@ -23,7 +23,7 @@ const ShippingInfo = () => {
   };
 
   return (
-    <section className="container mx-auto px-7 md:px-14 my-5">
+    <section className="container mx-auto px-7 md:pl-14 my-5">
       {/* login and sign up btn  */}
       <form onSubmit={handleSubmit}>
         <div className="flex gap-5">

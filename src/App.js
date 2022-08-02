@@ -4,10 +4,10 @@ import Navbar from './Components/Shared/Navbar.jsx';
 
 function App() {
   return (
-    <>
+    <section className="container max-w-[2000px] mx-auto">
       <Navbar />
       <ShippingContainerPage />
-    </>
+    </section>
   );
 }
 

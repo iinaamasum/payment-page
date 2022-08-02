@@ -10,7 +10,7 @@ const ShippingContainerPage = () => {
   return (
     <div>
       <ShippingTopBar />
-      <div className="flex items-start justify-center  gap-8">
+      <div className="flex items-start justify-center gap-8">
         <div className="w-[50%]">
           <ShippingInfo />
         </div>
@@ -18,7 +18,7 @@ const ShippingContainerPage = () => {
           <PaymentMethod />
           <DeliveryMethod />
         </div>
-        <div className="w-[25%]">
+        <div className="w-[25%] md:mr-14">
           <ProductCart />
         </div>
       </div>

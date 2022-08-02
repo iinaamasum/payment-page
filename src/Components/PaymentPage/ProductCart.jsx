@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdOutlineLocalShipping } from 'react-icons/md';
 import tShirt1 from '../../Assets/images/tShirt-1.jpg';
 import tShirt2 from '../../Assets/images/tshirt-2.jpg';
 import SelectedItemsCard from './SelectedItemsCard';
@@ -32,6 +33,13 @@ const ProductCart = () => {
         <button className="rounded-full w-[80%] bg-[#dddeee] px-5 py-3">
           Total Cost - $159.38
         </button>
+      </div>
+      <div className="flex items-center gap-5 w-[50%] mx-auto mt-10">
+        <MdOutlineLocalShipping />
+        <div className="text-gray-500">
+          <p>You are 32.4km away</p>
+          <p>from free shipping</p>
+        </div>
       </div>
     </section>
   );
