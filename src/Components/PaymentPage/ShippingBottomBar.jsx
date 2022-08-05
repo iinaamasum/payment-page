@@ -5,9 +5,9 @@ import Button from '../Shared/Button';
 
 const ShippingBottomBar = () => {
   return (
-    <section className="container mx-auto px-7 md:px-14">
-      <div className="flex items-center justify-between">
-        <Link to="/" className="inline-flex items-center">
+    <section className="container mx-auto px-4 md:px-14">
+      <div className="sm:flex items-center justify-between text-center mb-5">
+        <Link to="/" className="inline-flex items-center mb-5 sm:mb-0">
           <HiOutlineArrowNarrowLeft className="mr-5" /> Back
         </Link>
 

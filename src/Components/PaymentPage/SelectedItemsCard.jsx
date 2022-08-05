@@ -17,7 +17,7 @@ const SelectedItemsCard = ({ product }) => {
             <p className="text-gray-400">{id}</p>
           </div>
         </div>
-        <p>{price}</p>
+        <p className="text-orange-500 font-semibold">${price}</p>
       </div>
     </div>
   );
