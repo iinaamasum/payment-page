@@ -97,7 +97,7 @@ const ShippingInfo = () => {
             onChange={(e) => {
               setLocation(e.target.value);
             }}
-            class="select w-full  border-2 border-gray-300"
+            class="select w-full lg:w-1/2 border-2 border-gray-300"
           >
             <option value="India" selected>
               India
