@@ -38,66 +38,66 @@ const ShippingInfo = () => {
         <h3 className="mt-10 font-medium">Shipping Information</h3>
 
         {/* email and address  */}
-        <div className="md:flex items-center py-2 gap-3 mb-2 mt-1">
+        <div className="lg:flex items-center py-2 gap-3 mb-2 mt-1">
           <input
             type="text"
             name="email"
             placeholder="Email"
-            class="input w-full max-w-xs border-2 border-gray-300 mb-5 md:mb-0"
+            class="input w-full border-2 border-gray-300 mb-5 lg:mb-0"
           />
           <input
             type="text"
             name="address"
             placeholder="Address"
-            class="input w-full max-w-xs border-2 border-gray-300"
+            class="input w-full  border-2 border-gray-300"
           />
         </div>
 
         {/* first and last name */}
-        <div className="md:flex items-center py-2 gap-3 my-2">
+        <div className="lg:flex items-center py-2 gap-3 my-2">
           <input
             type="text"
             name="first_name"
             placeholder="First Name"
-            class="input w-full max-w-xs border-2 border-gray-300 mb-5 md:mb-0"
+            class="input w-full border-2 border-gray-300 mb-5 lg:mb-0"
           />
           <input
             type="text"
             name="last_name"
             placeholder="Last Name"
-            class="input w-full max-w-xs border-2 border-gray-300"
+            class="input w-full  border-2 border-gray-300"
           />
         </div>
 
         {/* city and post code  */}
-        <div className="md:flex items-center py-2 gap-3 my-2">
+        <div className="lg:flex items-center py-2 gap-3 my-2">
           <input
             type="text"
             name="city"
             placeholder="City"
-            class="input w-full max-w-xs border-2 border-gray-300 mb-5 md:mb-0"
+            class="input w-full border-2 border-gray-300 mb-5 lg:mb-0"
           />
           <input
             type="text"
             name="post_code"
             placeholder="Post Code"
-            class="input w-full max-w-xs border-2 border-gray-300"
+            class="input w-full  border-2 border-gray-300"
           />
         </div>
 
         {/* phone and location  */}
-        <div className="md:flex items-center py-2 gap-3 my-2">
+        <div className="lg:flex items-center py-2 gap-3 my-2">
           <input
             type="test"
             name="phone_number"
             placeholder="Phone"
-            class="input w-full max-w-xs border-2 border-gray-300 mb-5 md:mb-0"
+            class="input w-full border-2 border-gray-300 mb-5 lg:mb-0"
           />
           <select
             onChange={(e) => {
               setLocation(e.target.value);
             }}
-            class="select w-full max-w-xs border-2 border-gray-300"
+            class="select w-full  border-2 border-gray-300"
           >
             <option value="India" selected>
               India
